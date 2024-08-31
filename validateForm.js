@@ -10,13 +10,8 @@ function validateForm(){
     if(!/^\d{1,20}$/.test(numberInput)){
         alert(message += 'Номер ВЗН должен быть целым положительным числом до 20 знаков.\n')
         isValid = false
-    }
- 
-    if(senderInput.length > 50 || senderInput.length === 0){
-        alert(message += 'Получатель должен содержать до 50 символов.\n')
-        isValid = false
-    }
- 
+    } 
+    
     if(senderInput.length > 50 || senderInput.length === 0){
         alert(message += 'Отправитель должен содержать до 50 символов.\n')
         isValid = false
