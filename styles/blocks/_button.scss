@@ -1,0 +1,36 @@
+.button{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+
+    &__search,
+    &__cancel{
+        @include reset-button;
+        height: 40px;
+        padding-inline: 24px;
+        padding-block: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--color-light);
+        background-color: var(--color-blue-button);
+        border-radius: 20px;
+    }
+
+    &__search{
+        @include hover{
+            background-color: #1c3c5f;
+        }
+    }
+    
+    &__cancel{
+        color: var(--color-blue-button);
+        background-color: #F2F2F2;
+        border: var(--border);
+
+        @include hover{
+            background-color: #c2c2c2;;
+
+        }
+    }
+
+}

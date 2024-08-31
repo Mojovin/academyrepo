@@ -1,0 +1,25 @@
+.menu{
+    background-color: var(--color-gray-bg);
+    
+    &__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        
+    }
+
+    &__link{
+        display: flex;
+        column-gap: 12px;
+        align-items: center;
+
+        &-image{
+            width: 24px;
+            aspect-ratio: 1;
+        }
+
+        &-text{
+            font-size: 14px;
+        }
+    }
+}

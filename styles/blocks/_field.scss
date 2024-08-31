@@ -1,0 +1,46 @@
+.field {
+    position: relative;
+
+    &__input {
+        height: 45px;
+        width: 100%;
+        padding-inline: 4px;
+        padding-block: 15px;
+        font-size: 15px;
+        color: #333333;
+        background-color: #F2F2F2;
+        border: var(--border);
+        border-radius: var(--border-radius-small);
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__label {
+        &::after {
+            position: absolute;
+            top: -15%;
+            left: 5%;
+            font-size: 12px;
+            padding-inline: 4px;
+            background-color: var(--color-light);
+        }
+    }
+
+    &--1 .field__label::after {
+        content: 'Номер ВЗН';
+    }
+
+    &--2 .field__label::after {
+        content: 'Отправитель';
+    }
+
+    &--3 .field__label::after {
+        content: 'Получатель';
+    }
+
+    &--4 .field__label::after {
+        content: 'Дата принятия (период)';
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Фильтр ВЗН УП</title>
+</head>
+<body>
+    <header class="header--filter">
+        <div class="header__inner--filter container-header">
+            <button type="submit" class="header__image">
+                <img src="./images/filter/cross.svg" alt="Cross">
+            </button>
+            <h1 class="header__title">
+                Фильтр ВЗН УП
+            </h1>
+        </div>
+    </header>
+    <main class="content--filter">
+        <section class="section container-main">
+            <div class="filter">
+                <form class="filter__body" id="filterForm">
+                    <div class="filter__field field field--1">
+                        <label for="number" class="field__label"></label>
+                        <input class="field__input field__input--1" id="number" name="number">
+                    </div>
+                    <div class="filter__field field field--2">
+                        <label for="sender" class="field__label"></label>
+                        <input class="field__input field__input--2" id="sender" name="sender">
+                    </div>
+                    <div class="filter__field field field--3">
+                        <label for="recipient" class="field__label"></label>
+                        <input class="field__input field__input--3" id="recipient" name="recipient">
+                    </div>
+                    <div class="filter__field field field--4">
+                        <label for="date" class="field__label"></label>
+                        <input class="field__input field__input--4" id="date" name="date">
+                    </div>
+                </form>
+                <div class="filter__buttons button">
+                    <button class="button__search" id="list" onclick="getList()">Поиск</button>
+                    <button class="button__cancel">Отмена</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner container-header">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <div class="footer__link" id="menu" onclick="getMenu()">
+                        <img src="./images/footer/меню.svg" alt="Menu" class="footer__link-image">
+                        <p class="footer__link-text">
+                            Меню
+                        </p>
+                    </div>
+                </li>
+                <li class="footer__item">
+                    <div class="footer__link">
+                        <img src="./images/footer/сканер.svg" alt="Scan" class="footer__link-image">
+                        <p class="footer__link-text">
+                            Сканер
+                        </p>
+                    </div>
+                </li>
+                <li class="footer__item">
+                    <div class="footer__link" id="back" onclick="getPreviousPage()">
+                        <img src="./images/footer/arrow-left.svg" alt="Arrow left" class="footer__link-image">
+                        <p class="footer__link-text">
+                            Назад
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="validateForm.js"></script>
+</body>
+</html>

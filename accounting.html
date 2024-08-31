@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Учёт в производстве</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner container-header">
+            <h1 class="header__title">
+                Учёт в производстве
+            </h1>
+        </div>
+    </header>
+    <main class="content">
+        <section class="section container-main">
+            <div class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <div class="menu__link">
+                            <p class="menu__link-text">
+                                Акты инвентаризации
+                            </p>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__link">
+                            <p class="menu__link-text">
+                                Внутризаводские накладные (Приход)
+                            </p>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__link" id="filter" onclick="getFilter()">
+                            <p class="menu__link-text">
+                                Внутризаводские накладные (Расход)
+                            </p>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__link">
+                            <p class="menu__link-text">
+                                Лимитные карты (Приход)
+                            </p>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <div class="menu__link">
+                            <p class="menu__link-text">
+                                Цеховая номенклатура
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner container-header">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <div class="footer__link" id="menu" onclick="getMenu()">
+                        <img src="./images/footer/меню.svg" alt="Menu" class="footer__link-image">
+                        <p class="footer__link-text">
+                            Меню
+                        </p>
+                    </div>
+                </li>
+                <li class="footer__item">
+                    <div class="footer__link">
+                        <img src="./images/footer/сканер.svg" alt="Scan" class="footer__link-image">
+                        <p class="footer__link-text">
+                            Сканер
+                        </p>
+                    </div>
+                </li>
+                <li class="footer__item">
+                    <div class="footer__link" id="back" onclick="getPreviousPage()">
+                        <img src="./images/footer/arrow-left.svg" alt="Arrow left" class="footer__link-image">
+                        <p class="footer__link-text">
+                            Назад
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
